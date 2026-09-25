@@ -1,0 +1,36 @@
+---
+description: UI/UX Pro Max Design Methodology and Repository Standards
+globs: landing-pages/**/*
+alwaysApply: true
+---
+
+# UI/UX Pro Max Standard for Landing-Pages-For-SaaS-Products
+
+This repository enforces the **UI/UX Pro Max** design methodology across all landing pages in `landing-pages/`.
+
+## Key Principles
+
+1. **Independent Projects**:
+   - Every landing page inside `landing-pages/<project-name>` is self-contained with its own `package.json`, `index.html`, `src/`, `public/`, and `README.md`.
+   - Projects must be runnable via `npm run dev` and buildable via `npm run build` from their directory.
+   - Do NOT mix code between projects. Do NOT create a root `package.json`.
+
+2. **Design Methodology**:
+   - Before building or altering any landing page, use the shared skill script:
+     ```bash
+     python .agents/skills/ui-ux-pro-max/scripts/search.py "<product_type> <keywords>" --design-system -p "<ProjectName>"
+     ```
+   - Persist the design system to `landing-pages/<project-name>/design-system/<project-slug>/MASTER.md`:
+     ```bash
+     python .agents/skills/ui-ux-pro-max/scripts/search.py "<query>" --design-system --persist -p "<ProjectName>" --output-dir "landing-pages/<project-name>"
+     ```
+
+3. **Project-Specific Aesthetics**:
+   - Do not use a generic template or the same palette for all projects.
+   - Each project has its own distinctive brand personality, typography pairing (Google Fonts), color scale, and motion profile.
+
+4. **Production Quality Bar**:
+   - Zero emojis as icons (use SVG via Lucide / Heroicons).
+   - Fully responsive across 320px, 375px, 768px, 1024px, 1440px, 1920px.
+   - Accessible semantic HTML (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), visible `:focus-visible` rings, minimum 4.5:1 text contrast.
+   - Support `prefers-reduced-motion`.
