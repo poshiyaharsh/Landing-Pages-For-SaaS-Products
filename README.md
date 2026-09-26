@@ -37,6 +37,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 |---|---|---|---|---|
 | **[Aurelia Coffee](./landing-pages/aurelia-coffee)** | Specialty Coffee / Brand Experience | React + TypeScript + Vite | Interactive drink customizer, live cart & checkout drawer, brew rituals, and time-of-day moment guides. | **Completed** |
 | **[FlowPilot](./landing-pages/flowpilot)** | AI Project Management / B2B SaaS | React + JavaScript + Vite | AI task auto-decomposition, dynamic critical path forecasting, live interactive planner simulation, and stakeholder reports. | **Completed** |
+| **[Meetly AI](./landing-pages/meetly-ai)** | AI Meeting Assistant / SaaS | React + JavaScript + Vite | Live transcript-to-action visualizer, speaker diarization, automated summaries, vector search, and interactive simulator. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -70,6 +71,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   ├── public/
 │   │   └── src/
 │   │
+│   ├── meetly-ai/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
 │   └── [future-project]/
 │
 ├── .gitignore                        # Global Git ignore rules
@@ -80,11 +89,46 @@ Landing-Pages-For-SaaS-Products/
 
 ---
 
+## Featured Projects
+
+### 🤖 Meetly AI
+
+**AI Meeting Assistant**
+
+> Every meeting. Remembered. Organized. Actionable.
+
+Meetly AI is a premium AI SaaS landing page concept focused on meeting transcription, summaries, action-item extraction, speaker identification, and intelligent meeting search.
+
+#### Features
+
+- Automatic transcription
+- AI meeting summaries
+- Action-item extraction
+- Speaker identification
+- Meeting search
+- Interactive AI meeting visualization
+- Responsive design
+- Premium SaaS UI
+
+---
+
 ## Running a Project Locally
 
 Every project inside `landing-pages/` is independently runnable. There is no root `package.json` required.
 
-### 1. Run FlowPilot
+### 1. Run Meetly AI
+```bash
+# Navigate to Meetly AI
+cd landing-pages/meetly-ai
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 2. Run FlowPilot
 ```bash
 # Navigate to FlowPilot
 cd landing-pages/flowpilot
@@ -96,7 +140,7 @@ npm install
 npm run dev
 ```
 
-### 2. Run Aurelia Coffee
+### 3. Run Aurelia Coffee
 ```bash
 # Navigate to Aurelia Coffee
 cd landing-pages/aurelia-coffee
@@ -115,6 +159,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build Meetly AI
+cd landing-pages/meetly-ai
+npm run build
+npm run preview
+
 # Build FlowPilot
 cd landing-pages/flowpilot
 npm run build
