@@ -39,6 +39,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[FlowPilot](./landing-pages/flowpilot)** | AI Project Management / B2B SaaS | React + JavaScript + Vite | AI task auto-decomposition, dynamic critical path forecasting, live interactive planner simulation, and stakeholder reports. | **Completed** |
 | **[Meetly AI](./landing-pages/meetly-ai)** | AI Meeting Assistant / SaaS | React + JavaScript + Vite | Live transcript-to-action visualizer, speaker diarization, automated summaries, vector search, and interactive simulator. | **Completed** |
 | **[InvoiceX](./landing-pages/invoicex)** | Smart Invoicing / Financial SaaS | React + JavaScript + Vite | Interactive fintech cashflow dashboard, live invoice calculation, expense categorization, and multi-period revenue analytics. | **Completed** |
+| **[MailForge](./landing-pages/mailforge)** | AI Email Marketing / SaaS | React + JavaScript + Vite | AI campaign generation, visual email builder, audience segmentation, autonomous A/B testing, and real-time telemetry. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -88,6 +89,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   ├── public/
 │   │   └── src/
 │   │
+│   ├── mailforge/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
 │   └── [future-project]/
 │
 ├── .gitignore                        # Global Git ignore rules
@@ -99,6 +108,24 @@ Landing-Pages-For-SaaS-Products/
 ---
 
 ## Featured Projects
+
+### ✉️ MailForge — AI Email Marketing
+
+**AI Email Marketing Platform**
+
+> Create emails that actually get opened.
+
+MailForge is a modern AI-powered email marketing SaaS platform that helps growth teams create, design, personalize, test, and analyze high-performing email campaigns.
+
+#### Features
+
+- AI campaign generation from a single prompt
+- Drag-and-drop email builder with desktop & mobile previews
+- Dynamic audience segmentation & behavioral funnels
+- Autonomous A/B testing with statistical winner routing
+- Real-time campaign performance & telemetry dashboard
+- 6-step lifecycle workflow automation
+- Premium marketing aesthetic & accessible responsive UI
 
 ### 🤖 Meetly AI
 
@@ -143,7 +170,19 @@ InvoiceX brings invoicing, expenses, payments, clients, and revenue analytics in
 
 Every project inside `landing-pages/` is independently runnable. There is no root `package.json` required.
 
-### 1. Run InvoiceX
+### 1. Run MailForge
+```bash
+# Navigate to MailForge
+cd landing-pages/mailforge
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 2. Run InvoiceX
 ```bash
 # Navigate to InvoiceX
 cd landing-pages/invoicex
@@ -155,7 +194,7 @@ npm install
 npm run dev
 ```
 
-### 2. Run Meetly AI
+### 3. Run Meetly AI
 ```bash
 # Navigate to Meetly AI
 cd landing-pages/meetly-ai
@@ -167,7 +206,7 @@ npm install
 npm run dev
 ```
 
-### 3. Run FlowPilot
+### 4. Run FlowPilot
 ```bash
 # Navigate to FlowPilot
 cd landing-pages/flowpilot
@@ -179,7 +218,7 @@ npm install
 npm run dev
 ```
 
-### 4. Run Aurelia Coffee
+### 5. Run Aurelia Coffee
 ```bash
 # Navigate to Aurelia Coffee
 cd landing-pages/aurelia-coffee
@@ -198,6 +237,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build MailForge
+cd landing-pages/mailforge
+npm run build
+npm run preview
+
 # Build InvoiceX
 cd landing-pages/invoicex
 npm run build

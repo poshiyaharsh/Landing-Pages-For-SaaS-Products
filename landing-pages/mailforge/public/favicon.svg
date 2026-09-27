@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="mfGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="mfSpark" x1="28" y1="6" x2="42" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+  </defs>
+  <!-- Envelope Body -->
+  <rect x="6" y="12" width="36" height="26" rx="6" fill="#0F172A"/>
+  <rect x="6" y="12" width="36" height="26" rx="6" stroke="url(#mfGrad)" stroke-width="2"/>
+  
+  <!-- Envelope Flap & Lines -->
+  <path d="M7 14L24 27L41 14" stroke="url(#mfGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 36L18 26" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M41 36L30 26" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- AI Sparkle on top-right -->
+  <path d="M35 4C35 8.5 38.5 12 43 12C38.5 12 35 15.5 35 20C35 15.5 31.5 12 27 12C31.5 12 35 8.5 35 4Z" fill="url(#mfSpark)"/>
+</svg>

@@ -1,0 +1,321 @@
+/* ==========================================================================
+   MAILFORGE DESIGN SYSTEM
+   Standard: UI/UX Pro Max • Premium AI Email Marketing SaaS
+   Theme: Electric Blue • Purple Violet • Magenta Pink • Crisp Alabaster
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Backgrounds */
+  --bg-page: #FAFBFC;
+  --bg-white: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --bg-dark: #090D16;
+  --bg-dark-card: #111827;
+  --bg-dark-card-hover: #1F2937;
+  --bg-dark-border: rgba(255, 255, 255, 0.08);
+
+  /* Primary Brand & AI Accents */
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-light: #EFF6FF;
+  --color-primary-glow: rgba(37, 99, 235, 0.25);
+
+  --color-purple: #7C3AED;
+  --color-purple-hover: #6D28D9;
+  --color-purple-light: #F5F3FF;
+  --color-purple-glow: rgba(124, 58, 237, 0.22);
+
+  --color-pink: #EC4899;
+  --color-pink-hover: #DB2777;
+  --color-pink-light: #FDF2F8;
+  --color-pink-glow: rgba(236, 72, 153, 0.22);
+
+  --color-cyan: #06B6D4;
+  --color-cyan-light: #ECFEFF;
+  --color-cyan-glow: rgba(6, 182, 212, 0.2);
+
+  --color-emerald: #10B981;
+  --color-emerald-light: #ECFDF5;
+  --color-emerald-border: #A7F3D0;
+
+  --color-amber: #F59E0B;
+  --color-amber-light: #FFFBEB;
+
+  /* Strategic Gradients */
+  --gradient-brand: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #EC4899 100%);
+  --gradient-brand-subtle: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.08) 50%, rgba(236, 72, 153, 0.08) 100%);
+  --gradient-hero-glow: radial-gradient(circle at 50% 30%, rgba(37, 99, 235, 0.15) 0%, rgba(124, 58, 237, 0.12) 40%, rgba(236, 72, 153, 0.06) 70%, transparent 100%);
+  --gradient-dark-card: linear-gradient(180deg, #111827 0%, #0B0F17 100%);
+
+  /* Text & Contrast Tokens */
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-subtle: #94A3B8;
+  --text-inverted: #F8FAFC;
+  --text-inverted-muted: #94A3B8;
+
+  /* Borders & Dividers */
+  --border-light: #E2E8F0;
+  --border-subtle: #EDF2F7;
+  --border-medium: #CBD5E1;
+  --border-focus: #2563EB;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-glow: 0 0 35px rgba(37, 99, 235, 0.18);
+  --shadow-pink-glow: 0 0 30px rgba(236, 72, 153, 0.2);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Container Max Width */
+  --container-max: 1240px;
+}
+
+/* Base Reset & Core Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.55;
+  background-color: var(--bg-page);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Responsive Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Utility Gradient Text */
+.gradient-text {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Eyebrow Badge */
+.eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  color: var(--color-primary);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+/* Primary Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-brand);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-subtle);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Dark UI Window */
+.dark-window {
+  background: var(--bg-dark);
+  border: 1px solid var(--bg-dark-border);
+  border-radius: var(--radius-xl);
+  color: var(--text-inverted);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+/* Section Header standard */
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px auto;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  line-height: 1.15;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Keyframes */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.floating-anim {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.floating-anim-delayed {
+  animation: floatSlow 6s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+/* Accessible Keyboard Focus */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
