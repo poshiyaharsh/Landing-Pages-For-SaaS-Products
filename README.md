@@ -97,6 +97,13 @@ Landing-Pages-For-SaaS-Products/
 │   │   ├── public/
 │   │   └── src/
 │   │
+│   ├── datapulse/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   └── src/
+│   │
 │   └── [future-project]/
 │
 ├── .gitignore                        # Global Git ignore rules
@@ -218,7 +225,19 @@ npm install
 npm run dev
 ```
 
-### 5. Run Aurelia Coffee
+### 5. Run DataPulse
+```bash
+# Navigate to DataPulse
+cd landing-pages/datapulse
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 6. Run Aurelia Coffee
 ```bash
 # Navigate to Aurelia Coffee
 cd landing-pages/aurelia-coffee
@@ -254,6 +273,11 @@ npm run preview
 
 # Build FlowPilot
 cd landing-pages/flowpilot
+npm run build
+npm run preview
+
+# Build DataPulse
+cd landing-pages/datapulse
 npm run build
 npm run preview
 
