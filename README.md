@@ -40,6 +40,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[Meetly AI](./landing-pages/meetly-ai)** | AI Meeting Assistant / SaaS | React + JavaScript + Vite | Live transcript-to-action visualizer, speaker diarization, automated summaries, vector search, and interactive simulator. | **Completed** |
 | **[InvoiceX](./landing-pages/invoicex)** | Smart Invoicing / Financial SaaS | React + JavaScript + Vite | Interactive fintech cashflow dashboard, live invoice calculation, expense categorization, and multi-period revenue analytics. | **Completed** |
 | **[MailForge](./landing-pages/mailforge)** | AI Email Marketing / SaaS | React + JavaScript + Vite | AI campaign generation, visual email builder, audience segmentation, autonomous A/B testing, and real-time telemetry. | **Completed** |
+| **[SupportIQ](./landing-pages/supportiq)** | AI Customer Support / SaaS | React + JavaScript + Vite | AI conversation understanding, shared omnichannel inbox, intelligent ticketing, connected knowledge, and customer sentiment. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -218,7 +219,14 @@ npm install
 npm run dev
 ```
 
-### 5. Run Aurelia Coffee
+### 5. Run SupportIQ
+```bash
+cd landing-pages/supportiq
+npm install
+npm run dev
+```
+
+### 6. Run Aurelia Coffee
 ```bash
 # Navigate to Aurelia Coffee
 cd landing-pages/aurelia-coffee
@@ -254,6 +262,11 @@ npm run preview
 
 # Build FlowPilot
 cd landing-pages/flowpilot
+npm run build
+npm run preview
+
+# Build SupportIQ
+cd landing-pages/supportiq
 npm run build
 npm run preview
 

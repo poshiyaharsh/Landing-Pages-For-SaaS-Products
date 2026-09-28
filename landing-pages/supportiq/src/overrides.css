@@ -1,0 +1,3 @@
+.comparison{grid-template-columns:1fr 1fr}
+.compare-card{min-width:0}
+@media(max-width:650px){.comparison{grid-template-columns:1fr}}
