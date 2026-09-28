@@ -41,6 +41,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[InvoiceX](./landing-pages/invoicex)** | Smart Invoicing / Financial SaaS | React + JavaScript + Vite | Interactive fintech cashflow dashboard, live invoice calculation, expense categorization, and multi-period revenue analytics. | **Completed** |
 | **[MailForge](./landing-pages/mailforge)** | AI Email Marketing / SaaS | React + JavaScript + Vite | AI campaign generation, visual email builder, audience segmentation, autonomous A/B testing, and real-time telemetry. | **Completed** |
 | **[SupportIQ](./landing-pages/supportiq)** | AI Customer Support / SaaS | React + JavaScript + Vite | AI conversation understanding, shared omnichannel inbox, intelligent ticketing, connected knowledge, and customer sentiment. | **Completed** |
+| **[DataPulse](./landing-pages/datapulse)** | Business Analytics / SaaS | React + JavaScript + Vite | Real-time dashboards, AI insights, KPI monitoring, custom reports, data integrations, and futuristic analytics command center. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -91,6 +92,22 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── mailforge/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── supportiq/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── datapulse/                    # Independent React + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.js
