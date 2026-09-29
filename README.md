@@ -42,6 +42,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[MailForge](./landing-pages/mailforge)** | AI Email Marketing / SaaS | React + JavaScript + Vite | AI campaign generation, visual email builder, audience segmentation, autonomous A/B testing, and real-time telemetry. | **Completed** |
 | **[SupportIQ](./landing-pages/supportiq)** | AI Customer Support / SaaS | React + JavaScript + Vite | AI conversation understanding, shared omnichannel inbox, intelligent ticketing, connected knowledge, and customer sentiment. | **Completed** |
 | **[DataPulse](./landing-pages/datapulse)** | Business Analytics / SaaS | React + JavaScript + Vite | Real-time dashboards, AI insights, KPI monitoring, custom reports, data integrations, and futuristic analytics command center. | **Completed** |
+| **[HireFlow](./landing-pages/hireflow)** | AI Recruitment / Hiring Intelligence | React + JavaScript + Vite | Interactive candidate intelligence dashboard, live resume analysis, Kanban pipeline, panel scheduling, and AI copilot. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -108,6 +109,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── datapulse/                    # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── hireflow/                     # Independent React + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.js
@@ -182,6 +191,25 @@ InvoiceX brings invoicing, expenses, payments, clients, and revenue analytics in
 - Interactive fintech cashflow dashboard
 - Premium fintech aesthetic with responsive design
 
+### 🎯 HireFlow — AI Recruitment
+
+**AI Recruitment & Hiring Intelligence**
+
+> Find the right people, without the endless search.
+
+HireFlow is an AI-powered recruitment platform that helps companies discover, evaluate, organize, and hire the right candidates faster with semantic resume screening, multidimensional matching, panel scheduling, and structured AI interview insights.
+
+#### Features
+
+- Interactive candidate intelligence dashboard with live search & status filters
+- Flagship 5-module feature showcase (Screening, Matching, Scheduling, Pipeline, Insights)
+- AI Copilot conversational assistant with natural language querying
+- Detailed candidate profile dossier with skill tags & progressable timeline
+- Executive hiring telemetry dashboard with candidate funnel & time-to-hire trends
+- Connected 4-step onboarding timeline and 8 native ecosystem integrations
+- Enterprise security, data protection, and responsible AI governance notice
+- Transparent pricing with annual 20% discount switch & interactive modals
+
 ---
 
 ## Running a Project Locally
@@ -255,6 +283,18 @@ npm install
 npm run dev
 ```
 
+### 7. Run HireFlow
+```bash
+# Navigate to HireFlow
+cd landing-pages/hireflow
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -262,6 +302,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build HireFlow
+cd landing-pages/hireflow
+npm run build
+npm run preview
+
 # Build MailForge
 cd landing-pages/mailforge
 npm run build
