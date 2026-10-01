@@ -43,6 +43,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[SupportIQ](./landing-pages/supportiq)** | AI Customer Support / SaaS | React + JavaScript + Vite | AI conversation understanding, shared omnichannel inbox, intelligent ticketing, connected knowledge, and customer sentiment. | **Completed** |
 | **[DataPulse](./landing-pages/datapulse)** | Business Analytics / SaaS | React + JavaScript + Vite | Real-time dashboards, AI insights, KPI monitoring, custom reports, data integrations, and futuristic analytics command center. | **Completed** |
 | **[HireFlow](./landing-pages/hireflow)** | AI Recruitment / Hiring Intelligence | React + JavaScript + Vite | Interactive candidate intelligence dashboard, live resume analysis, Kanban pipeline, panel scheduling, and AI copilot. | **Completed** |
+| **[Formly](./landing-pages/formly)** | No-Code Form Builder / SaaS | React + JavaScript + Vite | Interactive drag-and-drop builder canvas, dynamic conditional logic visualizer, deep telemetry analytics, and 80+ templates. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -117,6 +118,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── hireflow/                     # Independent React + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── formly/                       # Independent React + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.js
@@ -210,6 +219,26 @@ HireFlow is an AI-powered recruitment platform that helps companies discover, ev
 - Enterprise security, data protection, and responsible AI governance notice
 - Transparent pricing with annual 20% discount switch & interactive modals
 
+### ⚡ Formly — No-Code Form Builder
+
+**No-Code Form Builder & Response Intelligence**
+
+> Build beautiful forms. Without writing code.
+
+Formly is a playful, modern, and production-ready SaaS landing page for an advanced no-code form builder that helps teams create high-converting forms with drag-and-drop simplicity, intelligent logic branching, real-time telemetry, and 150+ ecosystem integrations.
+
+#### Features
+
+- Interactive Formly Studio canvas with 3-column architecture (Elements, Canvas, Properties)
+- Organic floating elements with depth and subtle rotation (`+ Add Question`, `If → Company Size = 50+`, `1,284 Responses`, `✓ Form Published`)
+- Flagship 5-card feature showcase (Drag & Drop, Conditional Logic, Templates, Analytics, Integrations)
+- Desktop and Mobile responsive preview simulator with live submissions counter and confetti celebration
+- Rich filterable templates library with 6 domain-specific kits and interactive preview modals
+- Dynamic conditional logic visualizer with interactive branching pathways
+- Deep telemetry analytics dashboard with time-series charts, device breakdowns, and drop-off funnel
+- Ecosystem hub with search and instant connection states for Slack, Sheets, Notion, HubSpot, and Webhooks
+- 3-tier pricing plans with annual discount switch and interactive onboarding flow
+
 ---
 
 ## Running a Project Locally
@@ -295,6 +324,18 @@ npm install
 npm run dev
 ```
 
+### 8. Run Formly
+```bash
+# Navigate to Formly
+cd landing-pages/formly
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -302,6 +343,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build Formly
+cd landing-pages/formly
+npm run build
+npm run preview
+
 # Build HireFlow
 cd landing-pages/hireflow
 npm run build

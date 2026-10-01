@@ -1,0 +1,72 @@
+export const featuresData = [
+  {
+    id: 'drag-drop',
+    title: 'Drag & Drop Builder',
+    tagline: 'Visual Canvas Engine',
+    description: 'Design powerful forms visually with zero coding.',
+    extendedDescription: 'Stack, reorder, and configure 30+ interactive field types in seconds. Responsive by default with immediate live device preview.',
+    badge: 'Zero Code',
+    badgeColor: 'purple',
+    gradient: 'from-violet-500 to-indigo-600',
+    accentColor: '#6366F1',
+    bgLight: '#F5F3FF',
+    previewType: 'drag-drop',
+    stats: { label: 'Field Types', value: '30+' }
+  },
+  {
+    id: 'conditional-logic',
+    title: 'Conditional Logic',
+    tagline: 'Dynamic Branching & Routing',
+    description: 'Show the right questions based on every response.',
+    extendedDescription: 'Build multi-step dynamic decision trees with AND/OR rules, score calculations, and smart skips that adapt in real time.',
+    badge: 'Smart Flows',
+    badgeColor: 'pink',
+    gradient: 'from-pink-500 to-rose-500',
+    accentColor: '#EC4899',
+    bgLight: '#FDF2F8',
+    previewType: 'conditional-logic',
+    stats: { label: 'Higher Completion', value: '+38%' }
+  },
+  {
+    id: 'templates',
+    title: 'Beautiful Templates',
+    tagline: 'Conversion-Tuned Starting Points',
+    description: 'Start faster with professionally designed templates.',
+    extendedDescription: 'Choose from 80+ curated themes across feedback, onboarding, event registration, payment forms, and job applications.',
+    badge: '80+ Themes',
+    badgeColor: 'yellow',
+    gradient: 'from-amber-400 to-orange-500',
+    accentColor: '#F59E0B',
+    bgLight: '#FEF3C7',
+    previewType: 'templates',
+    stats: { label: 'Time Saved', value: '15 mins' }
+  },
+  {
+    id: 'smart-analytics',
+    title: 'Smart Analytics',
+    tagline: 'Deep Telemetry & Drop-off Insights',
+    description: 'Understand responses, completion rates, and conversion.',
+    extendedDescription: 'Track user friction points, field-by-field hesitation times, device splits, and export comprehensive CSV/PDF reports.',
+    badge: 'Live Insights',
+    badgeColor: 'blue',
+    gradient: 'from-blue-500 to-cyan-500',
+    accentColor: '#0EA5E9',
+    bgLight: '#EFF6FF',
+    previewType: 'analytics',
+    stats: { label: 'Realtime Latency', value: '<50ms' }
+  },
+  {
+    id: 'integrations',
+    title: 'Powerful Integrations',
+    tagline: 'Instant Ecosystem Sync',
+    description: 'Connect Formly with the tools your team already uses.',
+    extendedDescription: 'Stream submitted data straight into Slack, Notion, HubSpot, Google Sheets, or any REST endpoint with custom payloads.',
+    badge: '150+ Connectors',
+    badgeColor: 'mint',
+    gradient: 'from-emerald-500 to-teal-500',
+    accentColor: '#10B981',
+    bgLight: '#ECFDF5',
+    previewType: 'integrations',
+    stats: { label: 'Supported Apps', value: '150+' }
+  }
+];
