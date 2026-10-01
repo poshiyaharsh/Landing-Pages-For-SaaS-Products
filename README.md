@@ -44,6 +44,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[DataPulse](./landing-pages/datapulse)** | Business Analytics / SaaS | React + JavaScript + Vite | Real-time dashboards, AI insights, KPI monitoring, custom reports, data integrations, and futuristic analytics command center. | **Completed** |
 | **[HireFlow](./landing-pages/hireflow)** | AI Recruitment / Hiring Intelligence | React + JavaScript + Vite | Interactive candidate intelligence dashboard, live resume analysis, Kanban pipeline, panel scheduling, and AI copilot. | **Completed** |
 | **[Formly](./landing-pages/formly)** | No-Code Form Builder / SaaS | React + JavaScript + Vite | Interactive drag-and-drop builder canvas, dynamic conditional logic visualizer, deep telemetry analytics, and 80+ templates. | **Completed** |
+| **[LaunchKit](./landing-pages/launchkit)** | Startup Growth Platform / SaaS | React + Tailwind + Vite | High-energy YC-grade startup launchpad, interactive lifecycle timeline, telemetry command center, and SEO audit suite. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -129,6 +130,15 @@ Landing-Pages-For-SaaS-Products/
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.js
+│   │   ├── index.html
+│   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── launchkit/                    # Independent React + Tailwind + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.js
+│   │   ├── tailwind.config.js
 │   │   ├── index.html
 │   │   ├── public/
 │   │   └── src/
@@ -239,6 +249,26 @@ Formly is a playful, modern, and production-ready SaaS landing page for an advan
 - Ecosystem hub with search and instant connection states for Slack, Sheets, Notion, HubSpot, and Webhooks
 - 3-tier pricing plans with annual discount switch and interactive onboarding flow
 
+### 🚀 LaunchKit — Startup Growth Platform
+
+**All-In-One Startup Launch & Growth Command Center**
+
+> Everything you need to launch your next big thing.
+
+LaunchKit is a high-energy, ambitious SaaS platform built for founders and fast-moving teams to take ideas from concept to scaled growth with landing page builders, viral waitlist funnels, cookieless telemetry, pre-launch SEO audits, and collaborative launch playbooks.
+
+#### Features
+
+- High-impact editorial hero with oversized typography and floating command center browser window
+- Problem/Solution split contrasting the old 12-tool sprawl ($365/mo) with LaunchKit's unified workspace
+- 5 core launch capabilities (Landing Page Builder, Marketing Campaigns, Product Analytics, SEO Tools, Launch Checklist)
+- Interactive 5-stage lifecycle timeline (Idea → Build → Validate → Launch → Grow) with real-time dashboard telemetry
+- Linear 3-step execution flow (Build → Launch → Grow) with glowing gradient connectors
+- 3 authentic founder testimonials from high-velocity startups
+- 3-tier pricing (Starter $0, Growth $29, Scale $79) with annual 20% discount switch
+- Smooth expandable FAQ accordion addressing founder concerns
+- High-energy climax final CTA with deployment modal and confetti celebration
+
 ---
 
 ## Running a Project Locally
@@ -336,6 +366,18 @@ npm install
 npm run dev
 ```
 
+### 9. Run LaunchKit
+```bash
+# Navigate to LaunchKit
+cd landing-pages/launchkit
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -343,6 +385,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build LaunchKit
+cd landing-pages/launchkit
+npm run build
+npm run preview
+
 # Build Formly
 cd landing-pages/formly
 npm run build
