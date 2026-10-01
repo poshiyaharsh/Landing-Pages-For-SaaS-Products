@@ -46,6 +46,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[Formly](./landing-pages/formly)** | No-Code Form Builder / SaaS | React + JavaScript + Vite | Interactive drag-and-drop builder canvas, dynamic conditional logic visualizer, deep telemetry analytics, and 80+ templates. | **Completed** |
 | **[LaunchKit](./landing-pages/launchkit)** | Startup Growth Platform / SaaS | React + Tailwind + Vite | High-energy YC-grade startup launchpad, interactive lifecycle timeline, telemetry command center, and SEO audit suite. | **Completed** |
 | **[SecureNest](./landing-pages/securenest)** | Cybersecurity Command Center / SaaS | React + TypeScript + Vite | Real-time threat map, continuous CVE scanner, intelligent alert triage, SOC 2/ISO compliance automation, and executive reports. | **Completed** |
+| **[PixelForge](./landing-pages/pixelforge)** | AI Design & Creative Production / SaaS | React + TypeScript + Vite | Editorial magazine layout, floating infinite creative canvas, AI copilot direction engine, before/after slider, and token exports. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -145,6 +146,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── securenest/                   # Independent React + TypeScript + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.ts
+│   │   ├── tailwind.config.js
+│   │   ├── index.html
+│   │   └── src/
+│   │
+│   ├── pixelforge/                   # Independent React + TypeScript + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.ts
@@ -299,6 +308,28 @@ SecureNest is an all-in-one cybersecurity command center designed for modern bus
 - Transparent pricing (Starter $29, Professional $99, Enterprise Custom) and accessible 7-item FAQ accordion
 - High-impact final CTA with geometric nest backdrop and multi-mode trial/demo modal with celebratory particle bursts
 
+### 🎨 PixelForge — AI Design & Creative Production Platform
+
+**Intelligent Creative Production Studio & Generative Workspace**
+
+> Turn ideas into production-ready designs.
+
+PixelForge is an all-in-one AI design and creative production platform engineered for creative directors, brand studios, product designers, and agile marketing teams. It combines an editorial magazine layout with a futuristic dark interface and selective neon luminescence.
+
+#### Features
+
+- Editorial hero featuring an oversized headline, neon gradient accents, and a floating creative studio workspace mockup
+- Understated monochrome client logo strip (NOVA, ARC, FRAME, KINETIC, MONO, ORBIT)
+- Problem vs. Solution editorial split contrasting fragmented tools with PixelForge's unified pipeline and an interactive 3-stage preview (Concept → Refined → Production)
+- 5-card bento feature grid with distinct compositions (AI Generation, Smart Design Systems, Production Workspace, Variations, Collaboration)
+- Dynamic magazine-style collage showcase of 6 fictional projects (ORBIT, NEXUS, VOID, AURA, MONO, PULSE) with interactive forkable modal previews
+- 4-step horizontal creation trajectory (01 IDEA → 02 EXPLORE → 03 BUILD → 04 SHIP)
+- Boundless canvas showcase with multiple artboards, multiplayer cursors, and live token inspectors
+- Interactive AI creative copilot conversation generating 4 distinct brand directions with real-time refinement triggers
+- Draggable before/after comparison slider highlighting the leap from raw sketches to production-ready deliverables
+- 8 creative team disciplines, 3 editorial studio director reviews, and 3-tier pricing (Starter $0, Creative $19, Studio $49)
+- Accessible 7-item accordion FAQ, dramatic final CTA with abstract neon backdrop, and celebratory confetti interactions
+
 ---
 
 ## Running a Project Locally
@@ -420,6 +451,18 @@ npm install
 npm run dev
 ```
 
+### 11. Run PixelForge
+```bash
+# Navigate to PixelForge
+cd landing-pages/pixelforge
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -427,6 +470,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build PixelForge
+cd landing-pages/pixelforge
+npm run build
+npm run preview
+
 # Build SecureNest
 cd landing-pages/securenest
 npm run build
