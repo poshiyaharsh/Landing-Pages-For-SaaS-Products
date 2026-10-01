@@ -24,12 +24,14 @@
 /* Linear-style subtle gradient text */
 .text-gradient-emerald {
   background: linear-gradient(135deg, #FFFFFF 0%, #A7F3D0 40%, #34D399 75%, #06B6D4 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-cyan {
   background: linear-gradient(135deg, #67E8F9 0%, #38BDF8 60%, #818CF8 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

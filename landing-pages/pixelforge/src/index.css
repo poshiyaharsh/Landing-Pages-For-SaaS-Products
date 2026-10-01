@@ -47,12 +47,14 @@
 /* Editorial gradient text */
 .text-gradient-violet-cyan {
   background: linear-gradient(135deg, #FFFFFF 20%, #A78BFA 50%, #22D3EE 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-neon {
   background: linear-gradient(135deg, #C084FC 0%, #38BDF8 60%, #F43F5E 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
