@@ -45,6 +45,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[HireFlow](./landing-pages/hireflow)** | AI Recruitment / Hiring Intelligence | React + JavaScript + Vite | Interactive candidate intelligence dashboard, live resume analysis, Kanban pipeline, panel scheduling, and AI copilot. | **Completed** |
 | **[Formly](./landing-pages/formly)** | No-Code Form Builder / SaaS | React + JavaScript + Vite | Interactive drag-and-drop builder canvas, dynamic conditional logic visualizer, deep telemetry analytics, and 80+ templates. | **Completed** |
 | **[LaunchKit](./landing-pages/launchkit)** | Startup Growth Platform / SaaS | React + Tailwind + Vite | High-energy YC-grade startup launchpad, interactive lifecycle timeline, telemetry command center, and SEO audit suite. | **Completed** |
+| **[SecureNest](./landing-pages/securenest)** | Cybersecurity Command Center / SaaS | React + TypeScript + Vite | Real-time threat map, continuous CVE scanner, intelligent alert triage, SOC 2/ISO compliance automation, and executive reports. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -141,6 +142,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   ├── tailwind.config.js
 │   │   ├── index.html
 │   │   ├── public/
+│   │   └── src/
+│   │
+│   ├── securenest/                   # Independent React + TypeScript + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.ts
+│   │   ├── tailwind.config.js
+│   │   ├── index.html
 │   │   └── src/
 │   │
 │   └── [future-project]/
@@ -269,6 +278,27 @@ LaunchKit is a high-energy, ambitious SaaS platform built for founders and fast-
 - Smooth expandable FAQ accordion addressing founder concerns
 - High-energy climax final CTA with deployment modal and confetti celebration
 
+### 🛡️ SecureNest — Cybersecurity Command Center
+
+**Unified Cybersecurity & Threat Operations SaaS Platform**
+
+> Protect every connection. Every device. Every day.
+
+SecureNest is an all-in-one cybersecurity command center designed for modern businesses, IT teams, and security engineers to monitor threats, scan vulnerabilities, manage alerts, track compliance, and generate executive reports. Built with a premium dark cyber aesthetic inspired by Linear, Vercel, Raycast, and Stripe.
+
+#### Features
+
+- Realistic floating Command Center with real-time telemetry sparklines and autonomous mitigation feed
+- Interactive posture dashboard with multi-tab navigation, system score (98%), and asset health counters
+- Live global threat defense map spanning North America, Europe, Asia, and India
+- Vulnerability scanner with interactive CVE audit simulation, severity tiers, and automatic remediation tracking
+- Signal-over-noise alert management interface with multi-level severity filters and triage status toggles
+- Continuous compliance dashboard with SVG progress rings for SOC 2 Type II, ISO 27001, GDPR, and HIPAA
+- Executive & auditor security report preview with instant generation and PDF export simulations
+- 6 enterprise zero-trust foundation pillars and 50+ seamless cloud/DevSecOps ecosystem connectors
+- Transparent pricing (Starter $29, Professional $99, Enterprise Custom) and accessible 7-item FAQ accordion
+- High-impact final CTA with geometric nest backdrop and multi-mode trial/demo modal with celebratory particle bursts
+
 ---
 
 ## Running a Project Locally
@@ -378,6 +408,18 @@ npm install
 npm run dev
 ```
 
+### 10. Run SecureNest
+```bash
+# Navigate to SecureNest
+cd landing-pages/securenest
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -385,6 +427,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build SecureNest
+cd landing-pages/securenest
+npm run build
+npm run preview
+
 # Build LaunchKit
 cd landing-pages/launchkit
 npm run build
