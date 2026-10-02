@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E242F;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A3444;
+}
+
+/* Terminal cursor blink */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: #00F59B;
+  vertical-align: middle;
+  animation: cursorBlink 1s infinite;
+  margin-left: 2px;
+}
+
+/* Subtle code glow */
+.text-code-glow {
+  text-shadow: 0 0 12px rgba(0, 245, 155, 0.4);
+}
+
+.text-cyan-glow {
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+/* Faint scanline overlay */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+}
+
+/* Subtle border animation */
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(0, 245, 155, 0.2); }
+  50% { border-color: rgba(0, 229, 255, 0.4); }
+}
+
+.pulse-border {
+  animation: borderPulse 4s ease-in-out infinite;
+}
+
+/* Focus visible styles for keyboard accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid #00F59B;
+  outline-offset: 2px;
+}

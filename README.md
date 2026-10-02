@@ -47,6 +47,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[LaunchKit](./landing-pages/launchkit)** | Startup Growth Platform / SaaS | React + Tailwind + Vite | High-energy YC-grade startup launchpad, interactive lifecycle timeline, telemetry command center, and SEO audit suite. | **Completed** |
 | **[SecureNest](./landing-pages/securenest)** | Cybersecurity Command Center / SaaS | React + TypeScript + Vite | Real-time threat map, continuous CVE scanner, intelligent alert triage, SOC 2/ISO compliance automation, and executive reports. | **Completed** |
 | **[PixelForge](./landing-pages/pixelforge)** | AI Design & Creative Production / SaaS | React + TypeScript + Vite | Editorial magazine layout, floating infinite creative canvas, AI copilot direction engine, before/after slider, and token exports. | **Completed** |
+| **[CodePilot](./landing-pages/codepilot)** | AI Developer Platform / SaaS | React + TypeScript + Vite | Terminal-inspired IDE workspace, interactive 401 diff fix, automated PR review, polyglot compiler ASTs, and ⌘K command runner. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -154,6 +155,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── pixelforge/                   # Independent React + TypeScript + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.ts
+│   │   ├── tailwind.config.js
+│   │   ├── index.html
+│   │   └── src/
+│   │
+│   ├── codepilot/                    # Independent React + TypeScript + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.ts
@@ -330,6 +339,31 @@ PixelForge is an all-in-one AI design and creative production platform engineere
 - 8 creative team disciplines, 3 editorial studio director reviews, and 3-tier pricing (Starter $0, Creative $19, Studio $49)
 - Accessible 7-item accordion FAQ, dramatic final CTA with abstract neon backdrop, and celebratory confetti interactions
 
+### ⚡ CodePilot — AI Developer Platform
+
+**AI Developer Platform / Developer Productivity SaaS**
+
+> Ship better code, faster.
+
+CodePilot is a developer-focused SaaS platform engineered for writing, reviewing, debugging, testing, and shipping production-ready code with sub-40ms AST intelligence.
+
+#### Features
+
+- Dark developer UI with terminal-inspired interfaces, subtle electric green/cyan accents, and zero generic AI clutter
+- Realistic CodePilot IDE workspace mockup featuring a full file explorer, live `calculateInvoice` code editor, interactive AI suggestions (Apply/Review/Dismiss), and integrated animated terminal
+- Fictional technical organization monochrome logo cloud (NEXUS, STACKLAB, BYTEWORKS, CLOUDCORE, DEVFORGE, VECTOR) and key developer claims
+- Problem vs. Solution comparison contrasting fragmented toolchains with CodePilot's unified loop
+- 6 high-density technical modules: AI Completion, AI Code Review, Debugging Copilot, Automated Testing, Codebase Intelligence, and One-Click Shipping
+- Immersive 3-column code editor showcase featuring an interactive 401 Unauthorized token fix and live diff injector
+- GitHub-inspired Pull Request #248 review interface with automated AST checklist and inline security cautions
+- 4-stage shipping lifecycle: 01 WRITE → 02 REVIEW → 03 TEST → 04 SHIP with terminal telemetry logs
+- Keyboard-accessible Command Palette (`⌘K` / `Ctrl+K`) with interactive `/explain`, `/refactor`, `/test`, `/debug`, `/review`, `/docs`, `/optimize`, and `/ship` commands
+- 12 ecosystem integration cards (GitHub, GitLab, Bitbucket, VS Code, JetBrains, Slack, Linear, Jira, Docker, AWS, Vercel, PostgreSQL)
+- Polyglot compiler support covering 11 languages and 7 frameworks with interactive target inspection
+- Zero-retention security architecture pipeline (`CODE` → `SECURE PROCESSING` → `ISOLATED WORKSPACE` → `DEVELOPER`)
+- Verified senior engineer testimonials and transparent 3-tier pricing (Free $0, Pro $20, Team $40) with yearly 20% savings toggle
+- 8-question animated accordion FAQ and dramatic final terminal CTA (`$ codepilot init` ... `$ ship`)
+
 ---
 
 ## Running a Project Locally
@@ -463,6 +497,18 @@ npm install
 npm run dev
 ```
 
+### 12. Run CodePilot
+```bash
+# Navigate to CodePilot
+cd landing-pages/codepilot
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -470,6 +516,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build CodePilot
+cd landing-pages/codepilot
+npm run build
+npm run preview
+
 # Build PixelForge
 cd landing-pages/pixelforge
 npm run build
