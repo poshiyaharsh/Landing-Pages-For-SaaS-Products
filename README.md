@@ -48,6 +48,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[SecureNest](./landing-pages/securenest)** | Cybersecurity Command Center / SaaS | React + TypeScript + Vite | Real-time threat map, continuous CVE scanner, intelligent alert triage, SOC 2/ISO compliance automation, and executive reports. | **Completed** |
 | **[PixelForge](./landing-pages/pixelforge)** | AI Design & Creative Production / SaaS | React + TypeScript + Vite | Editorial magazine layout, floating infinite creative canvas, AI copilot direction engine, before/after slider, and token exports. | **Completed** |
 | **[CodePilot](./landing-pages/codepilot)** | AI Developer Platform / SaaS | React + TypeScript + Vite | Terminal-inspired IDE workspace, interactive 401 diff fix, automated PR review, polyglot compiler ASTs, and ⌘K command runner. | **Completed** |
+| **[Brandly](./landing-pages/brandly)** | Brand Management SaaS / Digital Brand Workspace | React + TypeScript + Vite | Luxury editorial identity workspace, live guidelines manual, 6-brand identity gallery, interactive asset search, and template suite. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -509,6 +510,18 @@ npm install
 npm run dev
 ```
 
+### 13. Run Brandly
+```bash
+# Navigate to Brandly
+cd landing-pages/brandly
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -516,6 +529,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build Brandly
+cd landing-pages/brandly
+npm run build
+npm run preview
+
 # Build CodePilot
 cd landing-pages/codepilot
 npm run build
