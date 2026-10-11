@@ -49,6 +49,7 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[PixelForge](./landing-pages/pixelforge)** | AI Design & Creative Production / SaaS | React + TypeScript + Vite | Editorial magazine layout, floating infinite creative canvas, AI copilot direction engine, before/after slider, and token exports. | **Completed** |
 | **[CodePilot](./landing-pages/codepilot)** | AI Developer Platform / SaaS | React + TypeScript + Vite | Terminal-inspired IDE workspace, interactive 401 diff fix, automated PR review, polyglot compiler ASTs, and ⌘K command runner. | **Completed** |
 | **[Brandly](./landing-pages/brandly)** | Brand Management SaaS / Digital Brand Workspace | React + TypeScript + Vite | Luxury editorial identity workspace, live guidelines manual, 6-brand identity gallery, interactive asset search, and template suite. | **Completed** |
+| **[VoiceFlow AI](./landing-pages/voiceflow-ai)** | Conversational Intelligence / Speech Analytics | React + TypeScript + Vite | Luminous voice orb, reactive waveforms, diarized transcription scrubber, telemetry dashboard, voice agent builder, and TTS studio. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -164,6 +165,14 @@ Landing-Pages-For-SaaS-Products/
 │   │   └── src/
 │   │
 │   ├── codepilot/                    # Independent React + TypeScript + Vite project
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── vite.config.ts
+│   │   ├── tailwind.config.js
+│   │   ├── index.html
+│   │   └── src/
+│   │
+│   ├── voiceflow-ai/                 # Independent React + TypeScript + Vite project
 │   │   ├── README.md
 │   │   ├── package.json
 │   │   ├── vite.config.ts
@@ -365,6 +374,29 @@ CodePilot is a developer-focused SaaS platform engineered for writing, reviewing
 - Verified senior engineer testimonials and transparent 3-tier pricing (Free $0, Pro $20, Team $40) with yearly 20% savings toggle
 - 8-question animated accordion FAQ and dramatic final terminal CTA (`$ codepilot init` ... `$ ship`)
 
+### 🎙️ VoiceFlow AI — Conversational Intelligence & Speech Analytics
+
+**Intelligent Voice Interaction & Conversational Analytics Platform**
+
+> Turn conversations into intelligence.
+
+VoiceFlow AI is a futuristic conversational intelligence platform unifying real-time speech recognition, natural neural voice synthesis, speaker diarization, and conversational intelligence dashboards.
+
+#### Features
+
+- Luminous animated voice orb with concentric rotating rings, particle orbital physics, and reactive audio frequency levels
+- Dynamic audio visualization system with horizontal, frequency spectrum (FFT), and decibel level meter modes
+- Interactive speech-to-text demo with multi-speaker diarization scrubber, word confidence metrics, transcript download (.txt), and copy actions
+- Conversational intelligence dashboard displaying sentiment breakdown, topic distribution, key takeaways, decisions, and action items
+- Voice AI workspace command center mockup with session queue, transcript inspector, and audio metadata telemetry
+- Visual conversational agent workflow builder with interactive node parameter inspector and simulated caller-agent test chat
+- Natural text-to-speech studio with 4 presets (Aura, Zephyr, Serene, Vibe), cadence control, and client-side browser speech playback
+- Polyglot developer API showcase with interactive JavaScript, Python, and cURL tabs, copy button, and JSON response models
+- 8 ecosystem integration cards (Slack, Salesforce, HubSpot, Zoom, Google Drive, Zapier, Webhooks, REST API)
+- Enterprise privacy architecture with zero biometric voiceprint retention, ephemeral memory processing, and explicit recording controls
+- Transparent pricing (Free $0, Pro $29/mo, Business $99/mo) with 20% annual savings calculation
+- Accessible 10-question accordion FAQ and dramatic final CTA with central voice orb
+
 ---
 
 ## Running a Project Locally
@@ -522,6 +554,18 @@ npm install
 npm run dev
 ```
 
+### 14. Run VoiceFlow AI
+```bash
+# Navigate to VoiceFlow AI
+cd landing-pages/voiceflow-ai
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -529,6 +573,11 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build VoiceFlow AI
+cd landing-pages/voiceflow-ai
+npm run build
+npm run preview
+
 # Build Brandly
 cd landing-pages/brandly
 npm run build

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #080B12;
+    --color-bg-secondary: #0E1320;
+    --color-surface: #131A28;
+    --color-surface-elevated: #192235;
+    --color-cyan: #52E8FF;
+    --color-violet: #8875FF;
+    --color-text: #F5F7FB;
+    --color-text-muted: #A1ADBF;
+  }
+
+  body {
+    background-color: #080B12;
+    color: #F5F7FB;
+    overflow-x: hidden;
+  }
+
+  /* Custom Futuristic Dark Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080B12;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #192235;
+    border-radius: 3px;
+    border: 1px solid rgba(82, 232, 255, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #52E8FF;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #52E8FF;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow: 0 0 16px rgba(82, 232, 255, 0.6);
+  }
+
+  .text-glow-violet {
+    text-shadow: 0 0 16px rgba(136, 117, 255, 0.6);
+  }
+
+  .grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(82, 232, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(82, 232, 255, 0.04) 1px, transparent 1px);
+  }
+
+  .radial-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(82, 232, 255, 0.15) 0%, rgba(136, 117, 255, 0.08) 45%, transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
