@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #F7F9FC;
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #F0F4F9;
+    --text-primary: #111827;
+    --text-secondary: #64748B;
+    --border-color: #E2E8F0;
+    --color-blue: #3468F5;
+    --color-deep-blue: #2045B8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+  }
+
+  /* Custom technical scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+
+  /* Terminal dark scrollbar */
+  .terminal-scroll::-webkit-scrollbar-thumb {
+    background: #1E293B;
+  }
+  .terminal-scroll::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+
+  :focus-visible {
+    outline: 2px solid #3468F5;
+    outline-offset: 2px;
+  }
+}
+
+/* Topology animated pulse flow */
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.animate-flow {
+  stroke-dasharray: 4 4;
+  animation: dashFlow 1.2s linear infinite;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.04); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
