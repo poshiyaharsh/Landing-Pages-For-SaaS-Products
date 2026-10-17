@@ -49,7 +49,9 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[PixelForge](./landing-pages/pixelforge)** | AI Design & Creative Production / SaaS | React + TypeScript + Vite | Editorial magazine layout, floating infinite creative canvas, AI copilot direction engine, before/after slider, and token exports. | **Completed** |
 | **[CodePilot](./landing-pages/codepilot)** | AI Developer Platform / SaaS | React + TypeScript + Vite | Terminal-inspired IDE workspace, interactive 401 diff fix, automated PR review, polyglot compiler ASTs, and ⌘K command runner. | **Completed** |
 | **[Brandly](./landing-pages/brandly)** | Brand Management SaaS / Digital Brand Workspace | React + TypeScript + Vite | Luxury editorial identity workspace, live guidelines manual, 6-brand identity gallery, interactive asset search, and template suite. | **Completed** |
-| **[VoiceFlow AI](./landing-pages/voiceflow-ai)** | Conversational Intelligence / Speech Analytics | React + TypeScript + Vite | Luminous voice orb, reactive waveforms, diarized transcription scrubber, telemetry dashboard, voice agent builder, and TTS studio. | **Completed** |
+| **[SyncSpace](./landing-pages/syncspace)** | Collaborative Workspace / Team Productivity SaaS | React + TypeScript + Vite | Spatial bento layout, interactive 4-view workspace explorer (Board, Docs, Activity, Overview), interactive task movement, and team workflows. | **Completed** |
+| **[PromptLab](./landing-pages/promptlab)** | AI Prompt Experimentation & Optimization Lab | React + TypeScript + Vite | Precision dark laboratory, interactive prompt playground, variable injection, side-by-side variant comparisons, and rubric analytics. | **Completed** |
+| **[ShipFast](./landing-pages/shipfast)** | Developer Productivity & Startup Launch Platform | React + TypeScript + Vite | Layered developer launch visual, interactive launch workflow studio, pre-flight checklist audits, and 5-stage continuous delivery pipeline. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -394,8 +396,61 @@ VoiceFlow AI is a futuristic conversational intelligence platform unifying real-
 - Polyglot developer API showcase with interactive JavaScript, Python, and cURL tabs, copy button, and JSON response models
 - 8 ecosystem integration cards (Slack, Salesforce, HubSpot, Zoom, Google Drive, Zapier, Webhooks, REST API)
 - Enterprise privacy architecture with zero biometric voiceprint retention, ephemeral memory processing, and explicit recording controls
-- Transparent pricing (Free $0, Pro $29/mo, Business $99/mo) with 20% annual savings calculation
 - Accessible 10-question accordion FAQ and dramatic final CTA with central voice orb
+
+### 🌐 SyncSpace — Collaborative Workspace for Every Team
+
+**Collaborative Workspace and Team Productivity SaaS**
+
+> One workspace. Every team.
+
+SyncSpace brings projects, conversations, docs, and team decisions together in one beautifully organized, spatial workspace. Built with an editorial light-first productivity interface, generous whitespace, structured bento panels, and live presence indicators.
+
+#### Features
+
+- Spatial hero interface featuring central workspace panels, active sprint boards, doc editor, contextual discussions, and live teammate presence indicators
+- Interactive 4-view workspace explorer (Overview, Board, Docs, Activity) with functional client-side status shifts
+- 6 product-specific modules: Shared Workspaces, Live Collaboration, Connected Conversations, Visual Project Planning, Central Knowledge Hub, and Team-wide Visibility
+- 3-stage connected workflow sequence: (1) Gather everything in one workspace ➔ (2) Align team ownership ➔ (3) Move forward with shared context
+- 4 tailored use cases: Product & Engineering, Design & Creative, Marketing & Operations, Remote & Hybrid
+- 3-tier illustrative pricing (Free $0, Team $12, Business $24) with monthly/annual billing switch
+- 5-question accessible accordion FAQ and final conversion CTA
+
+### 🔬 PromptLab — AI Prompt Experimentation & Optimization Laboratory
+
+**AI Prompt Engineering, LLM Experimentation & Evaluation Platform**
+
+> Build, test, and optimize AI prompts.
+
+PromptLab turns prompt experimentation into a measurable, repeatable engineering workflow. Built with an OLED dark laboratory aesthetic (`#0B0F19`), technical precision, and deterministic client-side evaluation rubrics.
+
+#### Features
+
+- Interactive prompt playground with real-time editing, dynamic variable injection (`{{product}}`, `{{audience}}`), model switching (GPT-4o, Claude 3.5 Sonnet, Llama 3.1, Mistral), temperature slider, and instant execution simulation
+- Multi-variant side-by-side comparison with simulated latency telemetry, token counters, and coherence scores
+- Comprehensive evaluation metrics evaluating Clarity, Instruction Adherence, Consistency, and Relevance with custom SVG bar charts
+- 6 visual feature modules: Prompt Versioning, Variant Testing, Model Comparison, Evaluation Rubrics, Experiment History, and Reusable Templates
+- 4-step iterative methodology: Baseline ➔ Controlled Variations ➔ Sample Tests ➔ Rubric Comparison
+- 6 domain use cases with copyable prompt templates: AI App Dev, Customer Support, Content Gen, Info Extraction, Research, and Structured Output
+- Ecosystem integration blueprints for OpenAI, Anthropic, open-weights, LangChain, LlamaIndex, and GitHub Actions CI
+
+### ⚡ ShipFast — From Idea to Deployed Product
+
+**Developer Productivity & Startup Launch Platform**
+
+> From idea to deployed product.
+
+ShipFast coordinates project setup, development workflows, testing pipelines, and deployment checklists into one clear, friction-free path for indie hackers, founders, and engineering teams.
+
+#### Features
+
+- Layered developer launch visual with repository file explorer (`acme-dashboard`), syntax-highlighted TypeScript deployment handler, and live release telemetry
+- Flagship interactive Launch Workflow Builder with custom project naming, framework switcher (Next.js 15, Vite React 19, Remix, Astro, SvelteKit), simulated repository connection, and toggleable pre-flight checklist
+- 3-stage continuous execution stream (Build ➔ Pre-flight Test ➔ Edge Deployment) with copyable JSON configuration export
+- 6 developer modules: Project Initialization, Development Workflow, Build & Test Visibility, Deployment Preparation, Launch Checklist, and Project Overview
+- 5-stage connected delivery roadmap: Define project ➔ Choose stack ➔ Configure & build ➔ Test & prepare release ➔ Deploy & launch
+- Developer experience standards: Clean monorepo structure, Zod-validated environment schema, and deployment readiness audits
+- 4 builder use cases and 3 developer pricing tiers (Solo $0, Startup $49 lifetime, Team $199/yr)
 
 ---
 
@@ -566,6 +621,42 @@ npm install
 npm run dev
 ```
 
+### 15. Run SyncSpace (Port 5195)
+```bash
+# Navigate to SyncSpace
+cd landing-pages/syncspace
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 16. Run PromptLab (Port 5196)
+```bash
+# Navigate to PromptLab
+cd landing-pages/promptlab
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 17. Run ShipFast (Port 5197)
+```bash
+# Navigate to ShipFast
+cd landing-pages/shipfast
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -573,6 +664,21 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build SyncSpace
+cd landing-pages/syncspace
+npm run build
+npm run preview
+
+# Build PromptLab
+cd landing-pages/promptlab
+npm run build
+npm run preview
+
+# Build ShipFast
+cd landing-pages/shipfast
+npm run build
+npm run preview
+
 # Build VoiceFlow AI
 cd landing-pages/voiceflow-ai
 npm run build
