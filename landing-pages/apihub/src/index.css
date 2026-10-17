@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #F8FAFC;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for developer console feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Monospace code blocks */
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@layer utilities {
+  .text-glow-green {
+    text-shadow: 0 0 12px rgba(34, 197, 94, 0.45);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 12px rgba(6, 182, 212, 0.45);
+  }
+}

@@ -52,6 +52,14 @@ The skill is maintained centrally in `.agents/skills/ui-ux-pro-max/` as a shared
 | **[SyncSpace](./landing-pages/syncspace)** | Collaborative Workspace / Team Productivity SaaS | React + TypeScript + Vite | Spatial bento layout, interactive 4-view workspace explorer (Board, Docs, Activity, Overview), interactive task movement, and team workflows. | **Completed** |
 | **[PromptLab](./landing-pages/promptlab)** | AI Prompt Experimentation & Optimization Lab | React + TypeScript + Vite | Precision dark laboratory, interactive prompt playground, variable injection, side-by-side variant comparisons, and rubric analytics. | **Completed** |
 | **[ShipFast](./landing-pages/shipfast)** | Developer Productivity & Startup Launch Platform | React + TypeScript + Vite | Layered developer launch visual, interactive launch workflow studio, pre-flight checklist audits, and 5-stage continuous delivery pipeline. | **Completed** |
+| **[FlowOps](./landing-pages/flowops)** | Workflow Automation & Business Process Orchestration | React + TypeScript + Vite | Interactive visual node canvas, trigger/action configuration, live simulated execution runner, and 6 automation templates. | **Completed** |
+| **[InsightOS](./landing-pages/insightos)** | Premium Business Analytics & Decision Intelligence | React + TypeScript + Vite | Executive KPI dashboard, interactive revenue trend charts, dynamic segment filtering, customer acquisition funnel, and insight annotations. | **Completed** |
+| **[CreatorHub](./landing-pages/creatorhub)** | Creator Economy, Audience Growth & Monetization | React + TypeScript + Vite | Dynamic editorial creator workspace, multi-platform content calendar, audience growth analytics, and brand collaboration tracker. | **Completed** |
+| **[TalentOS](./landing-pages/talentos)** | Human-Centered Talent Intelligence & AI Hiring | React + TypeScript + Vite | Structured recruitment pipeline, explainable candidate skills gap radar, collaborative evaluation notes, and fair human-in-the-loop hiring. | **Completed** |
+| **[MarketMind](./landing-pages/marketmind)** | Institutional Market Intelligence & Financial Terminal | React + TypeScript + Vite | High-density financial workstation, multi-asset interactive charts, sector performance matrices, economic indicators, and research notebook. | **Completed** |
+| **[PrivacyX](./landing-pages/privacyx)** | Privacy Operations, Consent & Compliance Management | React + TypeScript + Vite | Minimalist privacy operations center, searchable DSR request queue, consent logs, data inventory mapping, and compliance task checklist. | **Completed** |
+| **[TestForge](./landing-pages/testforge)** | Software Testing, QA Automation & Flaky Quarantine | React + TypeScript + Vite | Real-time test suite runner simulation, visual diff failure triage, stack trace analyzer, flaky test quarantine, and CI pipeline connectors. | **Completed** |
+| **[APIHub](./landing-pages/apihub)** | Universal API Developer Portal & Gateway Workspace | React + TypeScript + Vite | Interactive endpoint explorer with client-side execution simulation, OpenAPI 3.1 parameter tables, multi-language SDK snippets, and edge proxy topology. | **Completed** |
 | **Future Projects** | Developer Tools, Fintech & HealthTech | React + Vite | Additional domain-specific SaaS landing pages designed under UI/UX Pro Max standards. | *Planned* |
 
 ---
@@ -657,6 +665,102 @@ npm install
 npm run dev
 ```
 
+### 18. Run FlowOps (Port 5198)
+```bash
+# Navigate to FlowOps
+cd landing-pages/flowops
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 19. Run InsightOS (Port 5199)
+```bash
+# Navigate to InsightOS
+cd landing-pages/insightos
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 20. Run CreatorHub (Port 5200)
+```bash
+# Navigate to CreatorHub
+cd landing-pages/creatorhub
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 21. Run TalentOS (Port 5201)
+```bash
+# Navigate to TalentOS
+cd landing-pages/talentos
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 22. Run MarketMind (Port 5202)
+```bash
+# Navigate to MarketMind
+cd landing-pages/marketmind
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 23. Run PrivacyX (Port 5203)
+```bash
+# Navigate to PrivacyX
+cd landing-pages/privacyx
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 24. Run TestForge (Port 5204)
+```bash
+# Navigate to TestForge
+cd landing-pages/testforge
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### 25. Run APIHub (Port 5205)
+```bash
+# Navigate to APIHub
+cd landing-pages/apihub
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ---
 
 ## Production Builds
@@ -664,6 +768,46 @@ npm run dev
 Each project can be compiled and previewed independently:
 
 ```bash
+# Build FlowOps
+cd landing-pages/flowops
+npm run build
+npm run preview
+
+# Build InsightOS
+cd landing-pages/insightos
+npm run build
+npm run preview
+
+# Build CreatorHub
+cd landing-pages/creatorhub
+npm run build
+npm run preview
+
+# Build TalentOS
+cd landing-pages/talentos
+npm run build
+npm run preview
+
+# Build MarketMind
+cd landing-pages/marketmind
+npm run build
+npm run preview
+
+# Build PrivacyX
+cd landing-pages/privacyx
+npm run build
+npm run preview
+
+# Build TestForge
+cd landing-pages/testforge
+npm run build
+npm run preview
+
+# Build APIHub
+cd landing-pages/apihub
+npm run build
+npm run preview
+
 # Build SyncSpace
 cd landing-pages/syncspace
 npm run build
